@@ -1,5 +1,5 @@
 serve:
-  image: zabbix-server-3.0
+  image: netw0rm/zab
   ports:
     - "80:80"
     - "10051:10051"
