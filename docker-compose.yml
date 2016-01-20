@@ -1,5 +1,5 @@
 serve:
-  image: netw0rm/zab
+  image: netw0rm/zab:2.4
   ports:
     - "80:80"
     - "10051:10051"
@@ -9,7 +9,7 @@ serve:
   environment:
     ZS_DBHost: db
     ZS_DBUser: admin
-    ZS_DBPassword: zabbixtoor
+    ZS_DBPassword: mypass
   links:
     - db
   restart: always
@@ -20,5 +20,5 @@ db:
     - /var/lib/docker/vfs/dir/zab_db:/var/lib/mysql
   environment:
     MARIADB_USER: admin
-    MARIADB_PASS: zabbixtoor
+    MARIADB_PASS: mypass
   restart: always
