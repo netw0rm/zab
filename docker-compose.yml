@@ -1,5 +1,6 @@
 serve:
   image: netw0rm/zab:2.4
+  container_name: zabbix-serve
   ports:
     - "80:80"
     - "10051:10051"
@@ -15,6 +16,7 @@ serve:
   restart: always
 db:
   image: zabbix/zabbix-db-mariadb
+  container_name: zabbix-db
   volumes:
     - /var/lib/docker/vfs/dir/zab_db_backups:/backups
     - /var/lib/docker/vfs/dir/zab_db:/var/lib/mysql
