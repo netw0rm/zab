@@ -1,9 +1,5 @@
 serve:
-<<<<<<< HEAD
-  image: netw0rm/zab:2.4
-=======
-  image: netw0rm/zab:dev
->>>>>>> 355704d7d2673c4d67cd5c0f96acc6fed99e928d
+  image: netw0rm/zab:n3.0
   container_name: zabbix-serve
   ports:
     - "80:80"
