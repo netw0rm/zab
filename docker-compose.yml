@@ -1,5 +1,5 @@
 serve:
-  image: netw0rm/zab:2.4
+  image: netw0rm/zab:n2.4
   container_name: zabbix-serve
   ports:
     - "80:80"
