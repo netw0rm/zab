@@ -4,8 +4,8 @@ MAINTAINER shawn qiusct@live.com
 
 # Layer: myzabbix
 COPY ./*.ttf /usr/local/src/zabbix/frontends/php/fonts/
-COPY alert-agent/plugin/zabbix-plugin/110monitor /usr/lib/zabbix/alertscripts/
-COPY alert-agent /usr/lib/zabbix/alertscripts/
+COPY alert-agent/plugin/zabbix-plugin/110monitor /usr/local/share/zabbix/alertscripts/
+COPY alert-agent /usr/local/share/zabbix/alertscripts/alert-agent
 
 RUN \
   sed -i 's/DejaVuSans/msyh/g' /usr/local/src/zabbix/frontends/php/include/defines.inc.php && \
