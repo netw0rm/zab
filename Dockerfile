@@ -3,8 +3,8 @@ FROM zabbix/zabbix-2.4:latest
 MAINTAINER shawn qiusct@live.com
 
 # Layer: myzabbix
-COPY ./*.ttf /usr/local/src/zabbix/frontends/php/fonts/ && \
-COPY alert-agent/plugin/zabbix-plugin/110monitor /usr/lib/zabbix/alertscripts/ && \
+COPY ./*.ttf /usr/local/src/zabbix/frontends/php/fonts/
+COPY alert-agent/plugin/zabbix-plugin/110monitor /usr/lib/zabbix/alertscripts/
 COPY alert-agent /usr/lib/zabbix/alertscripts/
 
 RUN \
