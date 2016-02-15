@@ -1,16 +1,12 @@
 serve:
-<<<<<<< HEAD
-  image: netw0rm/zab:2.4
-=======
-  image: netw0rm/zab:dev
->>>>>>> 355704d7d2673c4d67cd5c0f96acc6fed99e928d
+  image: netw0rm/zab:n3.0
   container_name: zabbix-serve
   ports:
     - "80:80"
     - "10051:10051"
-  volumes:
-    - /var/lib/docker/vfs/dir/zab3_alscripts:/usr/local/share/zabbix/alertscripts
-    - /var/lib/docker/vfs/dir/zab3_exscripts:/usr/local/share/zabbix/externalscripts
+  #volumes:
+    #- /var/lib/docker/vfs/dir/zab3_alscripts:/usr/local/share/zabbix/alertscripts
+    #- /var/lib/docker/vfs/dir/zab3_exscripts:/usr/local/share/zabbix/externalscripts
   environment:
     ZS_DBHost: db
     ZS_DBUser: admin
